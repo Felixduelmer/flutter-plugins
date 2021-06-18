@@ -7,10 +7,15 @@ homepage: https://github.com/cph-cachet/flutter-plugins/tree/master/packages/noi
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
+publish_to: none
+
 dependencies:
   flutter:
     sdk: flutter
-  audio_streamer: ^2.0.0
+  audio_streamer:
+    git:
+      url: https://github.com/Felixduelmer/flutter-plugins
+      path: packages/audio_streamer
 
 dev_dependencies:
   flutter_test:
